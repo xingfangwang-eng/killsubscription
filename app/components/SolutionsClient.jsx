@@ -93,15 +93,24 @@ export default function SolutionsClient() {
       {/* 顶部搜索栏 */}
       <div className="sticky top-0 z-50 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Search solutions..."
-              className="w-full pl-10 pr-4 py-3 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+          <div className="flex items-center gap-6">
+            {/* 回到首页链接 */}
+            <Link href="/" className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors">
+              <ChevronDown className="w-5 h-5 rotate-90" />
+              <span className="font-medium">back home</span>
+            </Link>
+            
+            {/* 搜索框 */}
+            <div className="relative flex-grow">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Search solutions..."
+                className="w-full pl-10 pr-4 py-3 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
           </div>
         </div>
       </div>
