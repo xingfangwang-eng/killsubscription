@@ -321,17 +321,7 @@ export default function HomeClient() {
           </div>
         </div>
 
-        {/* 底部信息 */}
-        <div className="text-center text-sm text-slate-400">
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
-            <a href="/terms" className="hover:text-slate-600 transition-colors">Terms</a>
-            <a href="/privacy" className="hover:text-slate-600 transition-colors">Privacy</a>
-            <a href="/refund" className="hover:text-slate-600 transition-colors">Refund</a>
-            <a href="/about" className="hover:text-slate-600 transition-colors">About</a>
-          </div>
-          <p className="mb-2">Support: 457239850@qq.com</p>
-          <p>Securely process your subscription data</p>
-        </div>
+
       </div>
     </div>
   )
