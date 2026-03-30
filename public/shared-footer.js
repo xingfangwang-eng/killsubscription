@@ -9,7 +9,11 @@ class SharedFooter extends HTMLElement {
           <a href="/about" style="text-decoration: none; color: black; font-size: 14px;">About</a>
         </div>
         <div style="text-align: center; font-size: 12px; color: #666;">
-          <p>Support:457239850@qq.com</p>
+
+          <div style="margin-top: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <span>Support:</span>
+            <a href="mailto:457239850@qq.com" style="text-decoration: none; color: #4f46e5;">457239850@qq.com</a>
+          </div>
         </div>
       </footer>
     `;
