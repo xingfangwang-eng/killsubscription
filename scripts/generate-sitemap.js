@@ -36,6 +36,35 @@ const generateSitemap = () => {
   </url>
 `;
 
+  // 添加静态页面
+  sitemap += `  <url>
+    <loc>https://killsubscription.com/about</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.8</priority>
+  </url>
+`;
+
+  sitemap += `  <url>
+    <loc>https://killsubscription.com/privacy</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.8</priority>
+  </url>
+`;
+
+  sitemap += `  <url>
+    <loc>https://killsubscription.com/refund</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.8</priority>
+  </url>
+`;
+
+  sitemap += `  <url>
+    <loc>https://killsubscription.com/terms</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.8</priority>
+  </url>
+`;
+
   // 添加每个详情页
   keywords.forEach(keyword => {
     sitemap += `  <url>

@@ -11,6 +11,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://killsubscription.com/about</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://killsubscription.com/privacy</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://killsubscription.com/refund</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://killsubscription.com/terms</loc>
+    <lastmod>2026-03-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://killsubscription.com/convert-curl-to-axios</loc>
     <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
