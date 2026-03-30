@@ -1,0 +1,286 @@
+[
+  {
+    "keyword": "simple client database for small law firm no subscription",
+    "slug": "simple-client-database-law-firm-no-subscription",
+    "title": "Build a Permanent Law Firm Client Database (Zero Monthly Fees)",
+    "problem_description": "Small legal practices are paying $100+/mo for Clio or MyCase when they only need to store contact info and case numbers. Most features are never used.",
+    "how_to_solve": "Use KillSubscription to generate a single-page PWA with encrypted LocalStorage for client records and search functionality."
+  },
+  {
+    "keyword": "inventory tracker for small bakery that works offline",
+    "slug": "offline-inventory-tracker-small-bakery",
+    "title": "Stop Renting Inventory Software: Custom Bakery Tracker for $0",
+    "problem_description": "Bakery owners need a simple way to track flour and sugar stocks without a laggy cloud interface or expensive monthly 'Pro' plans.",
+    "how_to_solve": "Generate a lightweight inventory app with Trae that saves data directly to the tablet's browser—no internet or subscription required."
+  },
+  {
+    "keyword": "how to replace typeform with self-hosted html form",
+    "slug": "replace-typeform-self-hosted-html",
+    "title": "Typeform Alternatives: Why Pay $50/mo for a Simple Survey?",
+    "problem_description": "Users are hitting response limits on 'Free' plans. They just want a beautiful form that sends data to their own Google Sheet or email.",
+    "how_to_solve": "Prompt KillSubscription for a 'Typeform-style UI with Resend API integration' and host it permanently on Vercel for free."
+  },
+  {
+    "keyword": "internal timesheet app for 5 employees no monthly cost",
+    "slug": "free-internal-timesheet-app-small-team",
+    "title": "Tired of Per-User Pricing? Create Your Own Team Timesheet in 60 Seconds",
+    "problem_description": "SaaS tools charging $5 per user per month for a simple 'Clock In/Out' button is highway robbery for teams of five.",
+    "how_to_solve": "Execute a 'Team Timesheet' prompt to get a PWA where data is exported as CSV every Friday. Own the code, kill the bill."
+  },
+  {
+    "keyword": "minimalist real estate lead tracker for solo agents",
+    "slug": "minimalist-real-estate-lead-tracker",
+    "title": "Solo Agents: Stop Paying for Over-Engineered CRM Bloat",
+    "problem_description": "Salesforce and HubSpot are too complex for a solo agent who just needs to know who to call back today.",
+    "how_to_solve": "Generate a 'One-Column Lead Tracker' with a 'Call Log' feature. Pure utility, zero distraction, zero subscription."
+  },
+  {
+    "keyword": "simple invoice generator with local data storage",
+    "slug": "invoice-generator-local-data-storage",
+    "title": "Generate Invoices without the Cloud: A Private, Free Alternative",
+    "problem_description": "Privacy-conscious freelancers don't want their financial data sitting on a third-party server just to generate a PDF invoice.",
+    "how_to_solve": "KillSubscription creates a static tool that generates PDFs in-browser. Your financial data never leaves your computer."
+  },
+  {
+    "keyword": "equipment rental log for film crews no saas",
+    "slug": "equipment-rental-log-film-crews-no-saas",
+    "title": "Film Crews: Own Your Gear Tracking Tool Permanently",
+    "problem_description": "Managing lenses and lights across multiple sets shouldn't require a $29/mo asset management subscription.",
+    "how_to_solve": "Build a 'Scan and Track' PWA that uses the phone camera to log equipment IDs into a local database."
+  },
+  {
+    "keyword": "lightweight crm for ghostwriters and freelancers",
+    "slug": "lightweight-crm-ghostwriters-freelancers",
+    "title": "Ghostwriters: A CRM That Doesn't Cost More Than Your Subscriptions",
+    "problem_description": "Freelance writers need to track project milestones, not 'sales pipelines' and 'marketing automation' fluff.",
+    "how_to_solve": "Generate a 'Project Milestone Tracker' focused on word counts and deadlines. Export to Markdown anytime."
+  },
+  {
+    "keyword": "gym member attendance tracker for local dojo",
+    "slug": "gym-member-attendance-tracker-dojo",
+    "title": "Small Gym Owners: Stop Paying 'Mindbody' Prices for Simple Attendance",
+    "problem_description": "A neighborhood Dojo doesn't need a massive booking system; they just need to check if a student showed up 10 times this month.",
+    "how_to_solve": "Prompt for a 'Digital Punch Card' app. Simple, rugged, and free of monthly 'Management Fees'."
+  },
+  {
+    "keyword": "convert excel spreadsheet to mobile app without bubble.io cost",
+    "slug": "convert-excel-to-mobile-app-low-cost",
+    "title": "The Bubble.io Killer: Turn Your Spreadsheet into a PWA for $0",
+    "problem_description": "Bubble has become too expensive for simple internal tools. Users want the 'App feel' without the 'Platform price'.",
+    "how_to_solve": "Input your column headers into KillSubscription. Get a React-based mobile UI that replaces your clunky Excel sheet."
+  },
+  {
+    "keyword": "daily standup log for async teams no slack app fees",
+    "slug": "daily-standup-log-no-slack-fees",
+    "title": "Async Teams: A Simple Standup Tool That You Actually Own",
+    "problem_description": "Paying for Slack bots that just ask 'What did you do today?' is unnecessary overhead.",
+    "how_to_solve": "Create a shared internal PWA hosted on a free tier where team members post 3 lines of text daily."
+  },
+  {
+    "keyword": "wedding planner task list for one-time use no subscription",
+    "slug": "wedding-planner-task-list-one-time-use",
+    "title": "Planning a Wedding? Don't Get Trapped in a 12-Month SaaS Contract",
+    "problem_description": "Couples only need a planner for a year, but many tools make it hard to export data or cancel easily.",
+    "how_to_solve": "Generate a 'Wedding Countdown & Budgeter'. It lives on your phone until the wedding day, then you just delete the bookmark."
+  },
+  {
+    "keyword": "simple bug tracker for solo indie hackers",
+    "slug": "simple-bug-tracker-indie-hackers",
+    "title": "Jira is Overkill: The 1-Page Bug Tracker for Indie Hackers",
+    "problem_description": "Solo devs spend more time managing tickets in Jira than fixing bugs. They need a 'To-fix' list that stays out of the way.",
+    "how_to_solve": "Build a 'Priority Matrix' tool with KillSubscription that focuses on 'Critical' vs 'Nice to fix' with zero configuration."
+  },
+  {
+    "keyword": "donor management for tiny non-profits without the saas tax",
+    "slug": "donor-management-tiny-non-profits",
+    "title": "Non-Profits: Keep More Donations, Stop Paying for CRM Subscriptions",
+    "problem_description": "Small charities spend 10% of their budget just on tools to track the people giving them money.",
+    "how_to_solve": "Generate a 'Donor Log' that keeps contact history and donation totals in a clean, exportable format."
+  },
+  {
+    "keyword": "student gradebook for private tutors no monthly fee",
+    "slug": "student-gradebook-private-tutors",
+    "title": "Private Tutors: A Professional Gradebook That Belongs to You",
+    "problem_description": "Tutors need to track progress for 5-10 students but don't want to sign up for 'Education Management Systems'.",
+    "how_to_solve": "Create a 'Tutor Dashboard' PWA. Track homework, grades, and payment status in one simple screen."
+  },
+  {
+    "keyword": "how to stop paying for calendly for 1 on 1 meetings",
+    "slug": "replace-calendly-for-1-on-1-meetings",
+    "title": "Calendly is Too Expensive: Build Your Own Scheduling Page",
+    "problem_description": "For someone with 3 meetings a week, the 'Pro' features of scheduling apps are a waste of money.",
+    "how_to_solve": "Prompt for a 'Static Booking Page' that integrates with Google Calendar API via a simple serverless function."
+  },
+  {
+    "keyword": "personal habit tracker without ads or premium tiers",
+    "slug": "personal-habit-tracker-no-ads",
+    "title": "A Habit Tracker That Doesn't Nag You to Go Pro",
+    "problem_description": "Users are tired of habit apps that lock 'more than 3 habits' behind a $9.99/mo paywall.",
+    "how_to_solve": "Generate a 'Grid-style Habit Tracker'. No accounts, no cloud, no ads. Just your progress in your browser."
+  },
+  {
+    "keyword": "qr code menu generator for restaurants without subscription",
+    "slug": "qr-code-menu-generator-no-subscription",
+    "title": "Restaurant Owners: Stop Paying Monthly for a QR Code Menu",
+    "problem_description": "It's just a PDF behind a QR code. Why are companies charging $20/mo to 'host' it?",
+    "how_to_solve": "Create a 'Menu Host' tool. Upload image, get a permanent URL on a free static host, and generate the QR code once."
+  },
+  {
+    "keyword": "simple recurring task reminder for house chores no saas",
+    "slug": "recurring-task-reminder-house-chores",
+    "title": "Manage Your Home Without a Task Management Subscription",
+    "problem_description": "Family chore apps are full of gamification and subscriptions. Some people just want a checklist that resets on Mondays.",
+    "how_to_solve": "Execute a 'Weekly Chore Reset' PWA. Check it off, it resets automatically based on the system clock."
+  },
+  {
+    "keyword": "track client billable hours without toggl premium",
+    "slug": "track-billable-hours-no-toggl-premium",
+    "title": "Toggl Alternatives: Simple Billable Hour Tracking for $0",
+    "problem_description": "Toggl hides reporting and team features behind a paywall. Freelancers just need a 'Start/Stop' and a CSV export.",
+    "how_to_solve": "Prompt KillSubscription for a 'Billable Timer' with project tagging and a 'Weekly Summary' view."
+  },
+  {
+    "keyword": "private meditation timer no tracking no subscription",
+    "slug": "private-meditation-timer-no-tracking",
+    "title": "A Meditation App for Peace, Not for Profit Tracking",
+    "problem_description": "Calm and Headspace are too noisy. Users want a timer and a log of their sessions without being tracked.",
+    "how_to_solve": "Build a 'Zen Timer'. Just a circle, a bell sound, and a local history of your minutes sat."
+  },
+  {
+    "keyword": "simple affiliate link manager for niche bloggers",
+    "slug": "affiliate-link-manager-niche-bloggers",
+    "title": "Bloggers: Manage Your Affiliate Links Without Monthly Fees",
+    "problem_description": "Link cloaking and management tools are moving to high-priced subscription models.",
+    "how_to_solve": "Generate a 'Link Redirector Dashboard'. Input long URL, get short slug, and track click counts locally."
+  },
+  {
+    "keyword": "pet health record tracker for multiple dogs no cloud",
+    "slug": "pet-health-record-tracker-no-cloud",
+    "title": "Track Your Pet's Health Without Another Subscription",
+    "problem_description": "Pet parents want to store vaccination dates and meds without their data being sold to pet food companies.",
+    "how_to_solve": "Create a 'Pet Passport' PWA. Store photos of records and upcoming dates in LocalStorage."
+  },
+  {
+    "keyword": "simple warehouse bin locator for small e-commerce",
+    "slug": "warehouse-bin-locator-small-ecommerce",
+    "title": "E-commerce Ops: A Simple Way to Find Your Inventory (No SaaS)",
+    "problem_description": "Small sellers in garages need to know which box has the SKU, not a full-scale Enterprise Resource Planning (ERP) system.",
+    "how_to_solve": "Generate a 'SKU to Bin' lookup tool. Fast, searchable, and works on a cheap warehouse tablet."
+  },
+  {
+    "keyword": "collect testimonials for my website without monthly fee",
+    "slug": "collect-testimonials-no-monthly-fee",
+    "title": "Testimonial Collection: Stop Paying for 'Social Proof' SaaS",
+    "problem_description": "Companies charge $30/mo just to display a few quotes from your customers on your site.",
+    "how_to_solve": "Build a 'Testimonial Collector' that generates a simple form and a snippet of HTML to paste into your site."
+  },
+  {
+    "keyword": "internal company directory for 20 people free tool",
+    "slug": "internal-company-directory-free-tool",
+    "title": "Build Your Own Employee Directory in 5 Minutes",
+    "problem_description": "Once a team hits 20, they need a simple 'Who is Who' but don't want to buy an HRIS like BambooHR.",
+    "how_to_solve": "Execute a 'Team Faces' prompt. A simple grid of names, roles, and Slack handles. Low maintenance, high utility."
+  },
+  {
+    "keyword": "simple password manager for shared family accounts no cloud",
+    "slug": "family-password-manager-no-cloud",
+    "title": "A Shared Family Vault That Doesn't Live on a Company's Server",
+    "problem_description": "After multiple cloud password manager hacks, users want a local-first vault they control.",
+    "how_to_solve": "Generate a 'Local Vault' PWA that uses AES-256 encryption. Save the file to your own Google Drive/Dropbox."
+  },
+  {
+    "keyword": "reading list tracker that isn't goodreads or a subscription",
+    "slug": "reading-list-tracker-no-subscription",
+    "title": "Track Your Books Your Way: A Minimalist Reading Log",
+    "problem_description": "Goodreads is bloated and social. Users want a private list of what they read and what they want to buy next.",
+    "how_to_solve": "Create a 'Personal Library' PWA. Focus on 'Currently Reading' and 'Wishlist' with simple star ratings."
+  },
+  {
+    "keyword": "daily meal planner for specific macro goals no saas",
+    "slug": "daily-meal-planner-macro-goals-no-saas",
+    "title": "Custom Meal Planning Without the 'Pro' Fitness App Fees",
+    "problem_description": "Apps like MyFitnessPal are hiding basic features behind aggressive subscriptions.",
+    "how_to_solve": "Build a 'Macro Calculator & Planner'. Input your ingredients once, drag and drop into your daily plan."
+  },
+  {
+    "keyword": "simple car maintenance log for classic car collectors",
+    "slug": "car-maintenance-log-classic-cars",
+    "title": "Classic Car Owners: A Simple Log for Your Pride and Joy",
+    "problem_description": "Collectors need to track oil changes and parts for multiple cars without a generic 'Fleet Management' bill.",
+    "how_to_solve": "Generate a 'Garage Journal'. Add cars by name, log service dates, and upload photos of receipts."
+  }
+]
+[
+  { "keyword": "private newsletter subscriber list manager no monthly fee", "slug": "private-newsletter-manager-no-fee", "title": "Email Marketing Without Mailchimp: Build Your Own Private List Tool" },
+  { "keyword": "simple youtube script organizer for solo creators", "slug": "youtube-script-organizer-solo", "title": "Creators: Stop Paying for Notion Templates, Build a Real Script App" },
+  { "keyword": "local-first podcast episode planner no cloud", "slug": "podcast-episode-planner-local", "title": "Podcasters: A Private Planner for Your Shows (Zero SaaS Bloat)" },
+  { "keyword": "freelance project price calculator for web designers", "slug": "freelance-price-calculator", "title": "Designers: Stop Guessing Quotes, Use Your Own Pricing Engine" },
+  { "keyword": "link-in-bio generator that you own forever", "slug": "own-your-link-in-bio", "title": "Linktree is Overpriced: Generate Your Own Link-in-Bio Page" },
+  { "keyword": "simple social media content calendar for small shops", "slug": "social-media-calendar-small-shop", "title": "Local Shops: Plan Your Posts Without a $50/mo Scheduler" },
+  { "keyword": "track client revisions for graphic designers no saas", "slug": "track-design-revisions-no-saas", "title": "Revisions Tracker: Kill the Endless Email Chain for Good" },
+  { "keyword": "daily calorie counter with zero data tracking", "slug": "private-calorie-counter", "title": "Privacy-First Calorie Tracker: No Cloud, No Ads, Just Data" },
+  { "keyword": "medication reminder for seniors no subscription", "slug": "medication-reminder-no-subscription", "title": "Seniors: A Simple Med Alert App That Won't Charge You Monthly" },
+  { "keyword": "custom habit tracker for neurodivergent productivity", "slug": "adhd-habit-tracker-custom", "title": "ADHD-Friendly Habit Tracker: Build the System That Actually Works" },
+  { "keyword": "minimalist personal finance ledger no bank sync", "slug": "personal-finance-ledger-no-sync", "title": "Stop Syncing Your Bank: A Simple, Private Manual Ledger" },
+  { "keyword": "track home renovation budget no spreadsheet bloat", "slug": "home-renovation-budget-tracker", "title": "Renovating? Track Every Cent Without a Complex Project Tool" },
+  { "keyword": "reading progress tracker for heavy readers no ads", "slug": "reading-progress-tracker-no-ads", "title": "Read More, Pay Less: A Personal Log for Book Lovers" },
+  { "keyword": "simple gratitude journal with local encryption", "slug": "private-gratitude-journal", "title": "A Private Sanctuary: Your Gratitude Journal, Locally Encrypted" },
+  { "keyword": "coffee tasting notes log for home baristas", "slug": "coffee-tasting-log", "title": "Baristas: A Private Log for Every Roast and Brew" },
+  { "keyword": "plant watering schedule for indoor gardens no cloud", "slug": "plant-watering-schedule-no-cloud", "title": "Green Thumbs: Track Your Plants Without a Monthly Fee" },
+  { "keyword": "track side hustle income without quickbooks", "slug": "side-hustle-income-tracker", "title": "Side Hustlers: Stop Paying for Accounting Software You Don't Need" },
+  { "keyword": "simple task timer for deep work no subscriptions", "slug": "deep-work-timer-no-sub", "title": "Deep Work: A Timer That Doesn't Distract You with Subscriptions" },
+  { "keyword": "custom goal setting dashboard for solo founders", "slug": "goal-setting-dashboard-solo", "title": "Solo Founders: A High-Level Goal Tracker Without the Noise" },
+  { "keyword": "lightweight flashcard app for language learners", "slug": "flashcard-app-language-learning", "title": "Learn Languages Faster: Your Own Flashcards, Your Own Way" },
+  { "keyword": "daily mood tracker for mental health no cloud", "slug": "daily-mood-tracker-no-cloud", "title": "Monitor Your Mood: A Private Log for Your Mental Health" },
+  { "keyword": "simple travel itinerary builder for solo travelers", "slug": "travel-itinerary-builder-solo", "title": "Travel Light: A Minimalist Planner for Your Next Adventure" },
+  { "keyword": "track freelance tax savings no monthly fee", "slug": "freelance-tax-savings-tracker", "title": "Tax Season Simplified: Track Your Savings Without the SaaS Tax" },
+  { "keyword": "personal wine cellar inventory no subscription", "slug": "wine-cellar-inventory-no-sub", "title": "Wine Collectors: A Simple Log for Your Growing Collection" },
+  { "keyword": "simple recipe organizer for home cooks no ads", "slug": "recipe-organizer-home-cooks", "title": "Ditch the Ad-Heavy Recipe Sites: Build Your Own Cookbook" },
+  { "keyword": "track board game wins and stats no saas", "slug": "board-game-stats-tracker", "title": "Gamers: A Simple Leaderboard for Your Game Nights" },
+  { "keyword": "minimalist workout logger for powerlifters", "slug": "workout-logger-powerlifters", "title": "Powerlifters: Log Your PRs Without the Fitness App Bloat" },
+  { "keyword": "simple mileage tracker for delivery drivers no cloud", "slug": "mileage-tracker-delivery-drivers", "title": "Delivery Drivers: Track Your Miles and Save Your Data" },
+  { "keyword": "track clothing inventory for poshmark sellers", "slug": "poshmark-inventory-tracker", "title": "Resellers: A Simple Way to Manage Your Inventory for $0" },
+  { "keyword": "daily water intake tracker no premium features", "slug": "water-intake-tracker-no-premium", "title": "Stay Hydrated: A Free Tracker Without the 'Pro' Paywall" },
+  { "keyword": "simple debt snowball calculator no subscription", "slug": "debt-snowball-calculator-no-sub", "title": "Pay Off Debt Faster: A Simple Tool for Financial Freedom" },
+  { "keyword": "track house hunting notes for buyers no cloud", "slug": "house-hunting-notes-no-cloud", "title": "House Hunters: Organize Your Viewings Without a Real Estate App" },
+  { "keyword": "minimalist gift idea tracker for families", "slug": "gift-idea-tracker-families", "title": "Never Forget a Gift Idea: A Shared List for Your Family" },
+  { "keyword": "simple blood pressure log for home monitoring", "slug": "blood-pressure-log-home", "title": "Health Tracking: A Private Log for Your Vital Signs" },
+  { "keyword": "track kids chores and allowance no monthly fee", "slug": "kids-chore-tracker-no-fee", "title": "Parenting Hacks: A Simple Chore Board That Doesn't Cost a Cent" }
+]
+[
+  { "keyword": "simple pet grooming appointment log no saas", "slug": "pet-grooming-log-no-saas", "title": "Groomers: Manage Your Pawsome Clients Without a Monthly Bill" },
+  { "keyword": "track lawn care customers for solo landscapers", "slug": "landscaping-customer-tracker", "title": "Landscapers: A Simple CRM for Your Routes and Clients" },
+  { "keyword": "minimalist rental property expense tracker", "slug": "rental-property-expense-tracker", "title": "Landlords: Track Your Expenses Without the Property Management SaaS" },
+  { "keyword": "simple yoga class attendance for independent teachers", "slug": "yoga-attendance-tracker", "title": "Yoga Teachers: A Simple Sign-In Sheet for Your Students" },
+  { "keyword": "track art commissions for freelance illustrators", "slug": "art-commission-tracker", "title": "Artists: Manage Your Queue and Payments Without the Hassle" },
+  { "keyword": "simple cleaning business job checklist no app fees", "slug": "cleaning-job-checklist-no-fees", "title": "Cleaning Pros: A Professional Checklist for Every Client" },
+  { "keyword": "track non-profit volunteer hours no subscription", "slug": "volunteer-hour-tracker-no-sub", "title": "Non-Profits: A Simple Way to Log Your Impact for Free" },
+  { "keyword": "minimalist library checkout for small schools", "slug": "small-school-library-tracker", "title": "Librarians: A Lightweight Tool for Managing Book Loans" },
+  { "keyword": "simple barbershop walk-in list no cloud", "slug": "barbershop-walk-in-list", "title": "Barbers: A Digital Waitlist That Doesn't Require a Subscription" },
+  { "keyword": "track car wash memberships for local detailers", "slug": "car-wash-membership-tracker", "title": "Detailers: A Simple Way to Manage Your Regular Customers" },
+  { "keyword": "minimalist wedding RSVP tracker no monthly fee", "slug": "wedding-rsvp-tracker-no-fee", "title": "Weddings: Track Your Guests Without the Planning App Costs" },
+  { "keyword": "simple flea market sales log for weekend vendors", "slug": "flea-market-sales-log", "title": "Vendors: A Fast Way to Log Your Weekend Sales" },
+  { "keyword": "track embroidery patterns for hobbyists no cloud", "slug": "embroidery-pattern-tracker", "title": "Hobbyists: Organize Your Patterns and Projects Privately" },
+  { "keyword": "simple tool rental log for community sheds", "slug": "community-tool-rental-log", "title": "Sharing Economy: A Simple Log for Your Local Tool Shed" },
+  { "keyword": "minimalist therapy session notes for solo practitioners", "slug": "therapy-session-notes-solo", "title": "Therapists: A Secure, Private Log for Your Client Progress" },
+  { "keyword": "simple jewelry inventory for etsy sellers no saas", "slug": "jewelry-inventory-etsy-no-saas", "title": "Etsy Sellers: Manage Your Supplies and Stock for $0" },
+  { "keyword": "track church donation records no monthly fee", "slug": "church-donation-tracker-no-fee", "title": "Ministries: A Respectful Way to Manage Your Giving Records" },
+  { "keyword": "minimalist pool maintenance log for home owners", "slug": "pool-maintenance-log-home", "title": "Pool Owners: Track Your Chemicals and Cleaning Without an App" },
+  { "keyword": "simple solar panel energy production log", "slug": "solar-energy-production-log", "title": "Go Green: A Simple Way to Monitor Your Solar Impact" },
+  { "keyword": "track wine club memberships for small vineyards", "slug": "wine-club-membership-tracker", "title": "Vineyards: A Direct Way to Manage Your Wine Club Members" },
+  { "keyword": "minimalist event attendee check-in no cloud", "slug": "event-attendee-check-in-no-cloud", "title": "Event Hosts: A Fast, Private Way to Check-In Your Guests" },
+  { "keyword": "simple music practice log for students", "slug": "music-practice-log-students", "title": "Musicians: Track Your Progress and Master Your Craft" },
+  { "keyword": "track personal collection of vinyl records no ads", "slug": "vinyl-record-collection-tracker", "title": "Vinyl Lovers: A Digital Crate for Your Analog Collection" },
+  { "keyword": "simple coffee shop loyalty card system no app", "slug": "coffee-loyalty-card-no-app", "title": "Cafe Owners: A Simple Way to Reward Your Regulars" },
+  { "keyword": "minimalist fish tank water quality log", "slug": "aquarium-water-quality-log", "title": "Aquarists: Keep Your Fish Healthy with a Private Water Log" },
+  { "keyword": "simple craft fair booth layout planner", "slug": "craft-fair-booth-planner", "title": "Artists: Plan Your Perfect Booth Layout Without the Stress" },
+  { "keyword": "track personal bike maintenance no subscription", "slug": "bike-maintenance-tracker-no-sub", "title": "Cyclists: A Simple Log for Every Tweak and Tune-Up" },
+  { "keyword": "simple scholarship application tracker for students", "slug": "scholarship-application-tracker", "title": "Students: Organize Your Future Without the Spreadsheet Mess" },
+  { "keyword": "minimalist campsite review log for vanlifers", "slug": "campsite-review-log-vanlife", "title": "Vanlifers: A Private Map of Your Favorite Hidden Gems" },
+  { "keyword": "simple bee hive inspection log for beekeepers", "slug": "bee-hive-inspection-log", "title": "Beekeepers: Track Your Colony's Health Without a SaaS Subscription" },
+  { "keyword": "track home brewery batches no monthly fee", "slug": "home-brewery-batch-tracker", "title": "Brewers: A Private Log for Your Perfect Pints" },
+  { "keyword": "simple choir rehearsal attendance tracker", "slug": "choir-attendance-tracker", "title": "Directors: A Fast Way to Take Attendance at Every Practice" },
+  { "keyword": "minimalist vegetable garden seed starter log", "slug": "garden-seed-starter-log", "title": "Gardeners: Track Your Seeds from Soil to Harvest" },
+  { "keyword": "simple amateur radio logbook no saas", "slug": "ham-radio-logbook-no-saas", "title": "Ham Radio: A Private Logbook for All Your Global Contacts" },
+  { "keyword": "track daily meditation minutes no cloud sync", "slug": "meditation-minutes-tracker-no-sync", "title": "Mindfulness: A Private Clock for Your Journey to Inner Peace" }
+]
