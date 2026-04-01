@@ -22,7 +22,7 @@ const generateSitemap = () => {
 
   // 添加首页
   sitemap += `  <url>
-    <loc>https://killsubscription.com</loc>
+    <loc>https://killsubscription.wangdadi.xyz/</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>1.0</priority>
   </url>
@@ -30,7 +30,7 @@ const generateSitemap = () => {
 
   // 添加聚合页
   sitemap += `  <url>
-    <loc>https://killsubscription.com/solutions</loc>
+    <loc>https://killsubscription.wangdadi.xyz/solutions</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.9</priority>
   </url>
@@ -38,28 +38,28 @@ const generateSitemap = () => {
 
   // 添加静态页面
   sitemap += `  <url>
-    <loc>https://killsubscription.com/about</loc>
+    <loc>https://killsubscription.wangdadi.xyz/about</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.8</priority>
   </url>
 `;
 
   sitemap += `  <url>
-    <loc>https://killsubscription.com/privacy</loc>
+    <loc>https://killsubscription.wangdadi.xyz/privacy</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.8</priority>
   </url>
 `;
 
   sitemap += `  <url>
-    <loc>https://killsubscription.com/refund</loc>
+    <loc>https://killsubscription.wangdadi.xyz/refund</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.8</priority>
   </url>
 `;
 
   sitemap += `  <url>
-    <loc>https://killsubscription.com/terms</loc>
+    <loc>https://killsubscription.wangdadi.xyz/terms</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.8</priority>
   </url>
@@ -68,7 +68,7 @@ const generateSitemap = () => {
   // 添加每个详情页
   keywords.forEach(keyword => {
     sitemap += `  <url>
-    <loc>https://killsubscription.com/${keyword.slug}</loc>
+    <loc>https://killsubscription.wangdadi.xyz/${keyword.slug}</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>0.8</priority>
   </url>
