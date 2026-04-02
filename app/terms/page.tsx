@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, FileText, Scale, Shield, AlertCircle, Users, CreditCard, Globe, Mail } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | wangdadi.xyz',
@@ -132,8 +133,7 @@ export default function TermsPage() {
           </div>
         </div>
       </main>
-
-
+      <Footer />
     </div>
   );
 }

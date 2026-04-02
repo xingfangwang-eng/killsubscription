@@ -1,4 +1,4 @@
-// 生成 SEO 元数据
+// Generate SEO metadata
 export async function generateMetadata() {
   return {
     title: 'KillSubscription Hub - No Subscription, Zero Cost',
@@ -7,7 +7,7 @@ export async function generateMetadata() {
   }
 }
 
-// 导入客户端组件
+// Import client component
 import SolutionsClient from '../components/SolutionsClient';
 
 export default function Solutions() {

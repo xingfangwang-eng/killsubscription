@@ -2,25 +2,25 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// 获取当前文件的目录
+// Get current directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 读取关键词数据
+// Read keyword data
 const keywordsPath = path.join(__dirname, '../data/keywords.json');
 const keywords = JSON.parse(fs.readFileSync(keywordsPath, 'utf8'));
 
-// 生成当前日期作为 lastmod
+// Generate current date as lastmod
 const now = new Date();
 const lastmod = now.toISOString().split('T')[0];
 
-// 生成 sitemap XML
+// Generate sitemap XML
 const generateSitemap = () => {
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-  // 添加首页
+  // Add homepage
   sitemap += `  <url>
     <loc>https://killsubscription.wangdadi.xyz/</loc>
     <lastmod>${lastmod}</lastmod>
@@ -28,7 +28,7 @@ const generateSitemap = () => {
   </url>
 `;
 
-  // 添加聚合页
+  // Add aggregation page
   sitemap += `  <url>
     <loc>https://killsubscription.wangdadi.xyz/solutions</loc>
     <lastmod>${lastmod}</lastmod>
@@ -36,7 +36,7 @@ const generateSitemap = () => {
   </url>
 `;
 
-  // 添加静态页面
+  // Add static pages
   sitemap += `  <url>
     <loc>https://killsubscription.wangdadi.xyz/about</loc>
     <lastmod>${lastmod}</lastmod>
@@ -65,7 +65,7 @@ const generateSitemap = () => {
   </url>
 `;
 
-  // 添加每个详情页
+  // Add each detail page
   keywords.forEach(keyword => {
     sitemap += `  <url>
     <loc>https://killsubscription.wangdadi.xyz/${keyword.slug}</loc>
@@ -77,11 +77,11 @@ const generateSitemap = () => {
 
   sitemap += `</urlset>`;
 
-  // 写入文件
+  // Write file
   const outputPath = path.join(__dirname, '../public/sitemap.xml');
   fs.writeFileSync(outputPath, sitemap);
   console.log('Sitemap generated successfully at:', outputPath);
 };
 
-// 执行生成
+// Execute generation
 generateSitemap();

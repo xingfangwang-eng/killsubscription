@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Users, Globe, Mail, Share2, Building2, Heart, CheckCircle2 } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'About Us | wangdadi.xyz',
@@ -140,8 +141,7 @@ export default function AboutPage() {
           </div>
         </div>
       </main>
-
-
+      <Footer />
     </div>
   );
 }

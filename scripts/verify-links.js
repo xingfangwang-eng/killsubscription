@@ -1,4 +1,4 @@
-// 验证首页页脚链接的脚本
+// Script to verify footer links on homepage
 import http from 'http';
 
 const links = [
@@ -39,22 +39,22 @@ function verifyLink(link) {
 }
 
 async function verifyLinks() {
-  console.log('开始验证首页页脚链接...');
+  console.log('Starting verification of homepage footer links...');
   
   for (const link of links) {
     try {
       const result = await verifyLink(link);
       if (result.success) {
-        console.log(`✅ ${result.link} - 成功 (${result.status})`);
+        console.log(`✅ ${result.link} - Success (${result.status})`);
       } else {
-        console.log(`❌ ${result.link} - 失败 (${result.status})`);
+        console.log(`❌ ${result.link} - Failed (${result.status})`);
       }
     } catch (error) {
-      console.log(`❌ ${error.link} - 错误: ${error.error}`);
+      console.log(`❌ ${error.link} - Error: ${error.error}`);
     }
   }
   
-  console.log('验证完成！');
+  console.log('Verification complete!');
 }
 
 verifyLinks();

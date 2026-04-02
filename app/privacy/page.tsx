@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Shield, Lock, Eye, Database, Cookie, Globe, Mail, FileText } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | wangdadi.xyz',
@@ -141,8 +142,7 @@ export default function PrivacyPage() {
           </div>
         </div>
       </main>
-
-
+      <Footer />
     </div>
   );
 }

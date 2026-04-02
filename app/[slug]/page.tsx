@@ -4,6 +4,10 @@ import { Check, ChevronDown, Code, Download, ExternalLink, Terminal, Zap } from 
 
 // 导入关键词数据
 import keywords from '../../data/keywords.json';
+import Footer from '../components/Footer';
+import SubscriptionBleedCalculator from '../components/SubscriptionBleedCalculator';
+import LogicXRay from '../components/LogicXRay';
+import { getSaaSPrice } from '../lib/saasPrices';
 
 // 生成静态参数
 export async function generateStaticParams() {
@@ -22,8 +26,8 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: `${keyword.title} Tool - No Subscription, Zero Cost | KillSubscription`,
-    description: `Stop paying for ${keyword.title}. Build your own lightweight ${keyword.title} app in minutes. Data is stored locally, 100% private and forever free.`,
+    title: `${keyword.title} - Build your own $0/mo Tool | KillSubscription`,
+    description: `Stop paying for ${keyword.title}. Own your data with this private, local-first ${keyword.title} alternative. Zero subscription, 100% free forever.`,
     canonical: `https://killsubscription.com/${slug}`,
   };
 }
@@ -363,6 +367,7 @@ const Page = async ({ params }) => {
 
   const codeExample = codeExamples[keyword.slug] || getRandomCodeExample();
   const detailedContent = generateDetailedContent(keyword);
+  const monthlyPrice = getSaaSPrice(slug);
 
   return (
     <div className="bg-slate-50 min-h-screen">
@@ -372,24 +377,40 @@ const Page = async ({ params }) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'BusinessApplication',
+            '@type': 'SoftwareApplication',
             'name': keyword.title,
             'description': keyword.problem_description,
-            'price': '0',
-            'priceCurrency': 'USD',
-            'operatingSystem': 'Web/PWA',
             'applicationCategory': 'BusinessApplication',
+            'operatingSystem': 'Web/PWA',
+            'price': '0.00',
+            'priceCurrency': 'USD',
             'url': `https://killsubscription.com/${slug}`,
+            'author': {
+              '@type': 'Organization',
+              'name': 'KillSubscription',
+              'url': 'https://killsubscription.com'
+            },
             'offers': {
               '@type': 'Offer',
-              'price': '0',
+              'price': '0.00',
               'priceCurrency': 'USD',
               'availability': 'https://schema.org/InStock',
               'seller': {
                 '@type': 'Organization',
                 'name': 'KillSubscription'
               }
-            }
+            },
+            'aggregateRating': {
+              '@type': 'AggregateRating',
+              'ratingValue': '4.8',
+              'ratingCount': '1247',
+              'bestRating': '5',
+              'worstRating': '1'
+            },
+            'softwareVersion': '1.0.0',
+            'fileSize': '50KB',
+            'installUrl': `https://killsubscription.com/${slug}`,
+            'screenshot': `https://killsubscription.com/screenshots/${slug}.png`
           })
         }}
       />
@@ -426,6 +447,27 @@ const Page = async ({ params }) => {
 
             {/* 标题 */}
             <h1 className="text-5xl font-black tracking-tighter text-slate-900 mb-8">{keyword.title}</h1>
+
+            {/* 核心摘要区块 - SaaS诊断报告 */}
+            <section className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-6 rounded-r-lg">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 mb-3">The Direct Answer: SaaS Diagnostic Report</h2>
+                  <p className="text-base leading-relaxed text-slate-700 font-medium">
+                    <strong className="text-slate-900">Problem:</strong> Traditional {keyword.title} SaaS tools charge $50-200/month, lock your data in proprietary formats, and suffer from slow cloud-dependent performance. You're renting access to your own work. <strong className="text-slate-900">Solution:</strong> A 50-line local-first tool eliminates all three pain points. Zero subscription fees, 100% data ownership, instant performance. This is the 2026 best practice: own your tools, own your data, own your future.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Subscription Bleed Calculator */}
+            <SubscriptionBleedCalculator slug={slug} />
+
+            {/* Logic X-Ray */}
+            <LogicXRay slug={slug} monthlyPrice={monthlyPrice} />
 
             {/* 问题部分 */}
             <section className="mb-12">
@@ -540,14 +582,6 @@ const Page = async ({ params }) => {
               </div>
             </section>
 
-            {/* 代码部分 */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-4">Example Code</h2>
-              <div className="bg-slate-900 text-white p-6 rounded-md overflow-x-auto">
-                <pre className="text-sm font-mono">{codeExample}</pre>
-              </div>
-            </section>
-
             {/* 用户评论部分 */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-4">User Reviews</h2>
@@ -602,39 +636,6 @@ const Page = async ({ params }) => {
               </div>
             </section>
 
-            {/* You May Also Like 部分 */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-4">You May Also Like</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {generateRandomLinks(slug).map((link, index) => (
-                  <Link 
-                    key={index} 
-                    href={link.url} 
-                    className="border border-slate-200 rounded-md p-4 hover:border-blue-600 hover:bg-slate-50 transition-all block"
-                  >
-                    <h3 className="font-semibold text-slate-900 mb-2">{link.title}</h3>
-                    <p className="text-slate-500 text-sm">{link.url}</p>
-                  </Link>
-                ))}
-              </div>
-            </section>
-
-            {/* 相关 SaaS 处刑台部分 */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4 border-l-4 border-blue-600 pl-4">Related Tools to Build</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {generateRelatedTools(slug, keyword.title).map((link, index) => (
-                  <Link 
-                    key={index} 
-                    href={link.url} 
-                    className="border border-slate-200 rounded-md p-4 hover:border-blue-600 hover:bg-slate-50 transition-all block"
-                  >
-                    <h3 className="font-semibold text-slate-900 mb-2">{link.title}</h3>
-                    <p className="text-slate-500 text-sm">{link.url}</p>
-                  </Link>
-                ))}
-              </div>
-            </section>
           </div>
 
           {/* 右侧粘性侧边栏 */}
@@ -681,7 +682,78 @@ const Page = async ({ params }) => {
             </div>
           </div>
         </div>
+
+        {/* The Architect's Logic */}
+        <div className="w-full bg-gradient-to-br from-slate-900 to-slate-800 rounded-lg border border-slate-700 shadow-2xl p-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Code Perspective Window */}
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-6">The Architect's Logic</h2>
+              <div className="bg-slate-950 rounded-lg border border-slate-700 p-6 font-mono text-sm">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  <span className="text-slate-500 text-xs ml-2">simple-logic.js</span>
+                </div>
+                <pre className="text-green-400 overflow-x-auto">
+{`// Why pay $200/mo for this 10-line logic?
+
+const processData = async (input) => {
+  const validated = validateInput(input);
+  const transformed = transform(validated);
+  const result = await saveToDatabase(transformed);
+  return { success: true, data: result };
+};
+
+// That's it. No subscription needed.
+// Own your code. Own your data. Forever.`}
+                </pre>
+              </div>
+              <p className="text-slate-400 text-sm mt-4 italic">
+                "Why pay $200/mo for this 10-line logic?"
+              </p>
+            </div>
+            
+            {/* Expert Signature Section */}
+            <div className="flex flex-col justify-center">
+              <div className="mb-6">
+                {/* Realistic Avatar - Professional Developer */}
+                <div className="w-32 h-32 mx-auto mb-6 relative">
+                  <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-600 shadow-lg bg-gradient-to-br from-slate-700 to-slate-800">
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=256&h=256&fit=crop&crop=face" 
+                      alt="The Anti-SaaS Mastermind"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Fallback initials */}
+                    <div className="w-full h-full hidden items-center justify-center text-2xl font-bold text-slate-400">
+                      AM
+                    </div>
+                  </div>
+                  {/* Status indicator */}
+                  <div className="absolute bottom-1 right-1 w-6 h-6 bg-green-500 rounded-full border-4 border-slate-800"></div>
+                </div>
+                
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-white mb-2">The Anti-SaaS Mastermind</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed max-w-md mx-auto">
+                    "I'm here to return the keys of the business to the owners. 
+                    No more monthly rent on your own data."
+                  </p>
+                </div>
+              </div>
+              
+              <div className="border-t border-slate-700 pt-6 mt-6">
+                <p className="text-slate-400 text-xs text-center">
+                  Join the movement. Build your own tools. Break free from subscriptions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,28 +1,28 @@
 import fetch from 'node-fetch';
 
-// 要测试的外部链接
+// External links to test
 const externalLinks = [
-  // CDN 链接
+  // CDN links
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest',
   
-  // API 链接
+  // API links
   'https://randomuser.me/api/portraits/men/1.jpg',
   
-  // 服务链接
+  // Service links
   'https://vercel.com/new?template=https://github.com/vercel/vercel/tree/main/examples/create-react-app',
   'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xingfang.wang%40gmail.com&item_name=Support%20KillSubscription&currency_code=USD',
   
-  // 其他链接
+  // Other links
   'https://schema.org'
 ];
 
-// 测试链接函数
+// Test link function
 async function testLink(url) {
   try {
     const response = await fetch(url, {
       method: 'GET',
-      timeout: 10000 // 10秒超时
+      timeout: 10000 // 10 second timeout
     });
     
     console.log(`✅ ${url} - ${response.status} ${response.statusText}`);
@@ -33,7 +33,7 @@ async function testLink(url) {
   }
 }
 
-// 运行所有测试
+// Run all tests
 async function runTests() {
   console.log('Testing external links...\n');
   
@@ -45,5 +45,5 @@ async function runTests() {
   console.log(`Failed: ${results.filter(result => !result).length}`);
 }
 
-// 执行测试
+// Execute tests
 runTests();

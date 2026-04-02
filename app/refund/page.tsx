@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, RefreshCcw, CheckCircle, Clock, AlertTriangle, CreditCard, Mail, FileText } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Refund Policy | wangdadi.xyz',
@@ -118,8 +119,7 @@ export default function RefundPage() {
           </div>
         </div>
       </main>
-
-
+      <Footer />
     </div>
   );
 }
